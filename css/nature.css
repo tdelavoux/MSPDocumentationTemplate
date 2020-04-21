@@ -19,6 +19,7 @@
 .docs-over-heading{background-color: #4cbbb9;border:none;}
 .big-title h1 {color:#fff;}
 .btn-info{ background-color:#eff3c6 !important; color: #575252;}
+.btn-info:hover{color: #4cbbb9;}
 
 /* ---- TITLES ----*/
 h2.title-theme{color:#0779e4; border-color: #0779e4;}
