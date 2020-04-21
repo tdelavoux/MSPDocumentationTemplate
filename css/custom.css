@@ -1,0 +1,253 @@
+/*
+    The followoing file is a part of MSP Documentation Template
+    Please be sure to use it with all the components delivered
+
+    @autohor    : Thibault DELAVOUX
+    @site       : http://thibaultdelavoux.fr
+    @Year       : 2020
+    @Version    : 1.0 
+
+    Copyright © 2020 DELAVOUX Thibault
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    The Software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the Software.
+*/
+
+/* ##############################################################################
+                        BODY AND STANDARD ELEMENTS
+################################################################################# */
+html, body{min-width:100%; min-height:100%;}
+.lead { text-transform: capitalize; margin-bottom: 0.5em; text-align:center;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {letter-spacing: 0px;font-weight: normal;position: relative;font-weight: normal; line-height: 1.8; color: #242424; font-family: 'Baloo Bhaina 2', cursive;}
+h1 { font-size: 22px; padding: 0 0 10px 0;}
+h2 {font-size: 20px; padding: 0 0 10px 0; font-weight: bold;}
+h3 {font-size: 18px; padding: 0 0 10px 0;}
+h4 { font-size: 21px; margin-bottom:0;}
+h5 { font-size: 14px;}
+h6 { font-size: 14px;}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {text-decoration: none !important;}
+body {background: #fff;color: #777777;font-size: 14px;line-height: 31px;letter-spacing: 0; font-weight: 400;padding: 0;}
+p {font-size: 15px;font-weight: 400;line-height: 26px;letter-spacing: 0;margin-top: 15px; text-align: justify; padding: 0 0 15px 0;}
+strong {color: #030303;}
+i{margin: 0 0.5em;}
+.mt1{margin-top:1em;}
+/* Under phone size rupture */
+@media (max-width: 768px) {
+    h2.title-theme {font-size: 27px;}
+}
+
+/* ##############################################################################
+                                HEADER
+################################################################################# */
+.docs-over-heading{border-bottom: solid 1px #e3e3e3;}
+.section.docs-heading { padding: 12px 0;}
+.big-title h1 {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Lobster', cursive;
+}
+
+/* Under col-md size rupture */
+@media (max-width: 992px) {
+    .big-title h1 {font-size: 30px;}
+}
+
+
+/* ##############################################################################
+                                SIDEBAR
+################################################################################# */
+
+.docs-over-sidebar{
+    border-right: solid 1px #e8e8e8;
+    background-color: #f2f2f2;
+    position:sticky;
+    top:0;
+    min-height: 100vh;
+    max-width: 330px;
+}
+
+.docs-sidebar{padding: 30px 0;}
+
+/* En dessous de la taille de rupture des col-md*/
+@media (max-width: 992px) {
+    .docs-over-sidebar{position: unset; border :none;min-height : unset; max-width: unset;}
+    .docs-sidebar{margin: 0 auto;}
+}
+
+/* all links */
+.docs-sidebar .nav>li>a {
+    color: #111;
+    border-left: 2px solid transparent;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* nested links */
+.docs-sidebar .nav .nav>li>a {
+    padding-left: 40px;
+    font-size: 14px;
+
+}
+
+/* hover links */ 
+.docs-sidebar .nav>li:not(.active)>a:hover {
+    color: #0E97EE;
+    text-decoration: none;
+    background-color: transparent;
+    border-left-width: 1px;
+    border-left-color: #0E97EE;
+}
+/* focus links */
+.docs-sidebar .nav>li>a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/* ##############################################################################
+                                Blocs
+################################################################################# */
+.doc-over-content{padding: 10px 20px;}
+.section{margin-top: 3em;}
+/* Section Titles */
+.title-theme{font-size: 4.125rem;line-height: 4.063rem;font-weight: 300; color: #737373; border-bottom: solid 1px #737373;}
+.title-theme a {font-size: 14px; font-weight: bold; padding-left: 20px;}
+
+/* ------------ INTRO ------------ */
+.intro-bloc { margin-top: 10px;padding: 10px 15px;background-color: #f3f3f3;}
+.intro-bloc li {list-style: none;}
+.intro-bloc a {color: #0E97EE !important;}
+.intro-bloc a { color: #030303;font-weight: 400; font-size: 16px;}
+
+ul { padding: 0; list-style: none;}
+
+ol li ul li { padding-left: 20px;}
+
+
+/* ------------- Message Blocs ---------------------- */
+.banner-bloc i {font-size: 21px;}
+.banner-bloc p {padding: 0;}
+.banner-bloc a {color: #ffffff;font-weight: bold;}
+.banner-bloc ul {padding: 0 30px;}
+.banner-bloc{border-radius: 5px;color: #ffffff;font-style: italic;padding: 10px 20px; margin: 1em;}
+
+.InfoBloc {background-color: #3498db; border: 1px solid #2b82bd;}
+.WarningBloc {background-color: #f39c12; border: 1px solid #d98c11;}
+.DangerBloc {background-color: #e74c3c; border: 1px solid #d44839;}
+
+
+.responsive-image{width: 100%;border:solid 1px #d6d6d6;}
+
+/* ##############################################################################
+                                Coloration synaxique
+################################################################################# */
+
+/*Syntax Highlighter : Sublime Theme */
+
+.syntaxhighlighter {
+    background-color: #2b303b !important;
+    padding: 15px 0;
+    margin: 2em 0 1em 0 !important;
+}
+
+.syntaxhighlighter a,
+.syntaxhighlighter div,
+.syntaxhighlighter code,
+.syntaxhighlighter table,
+.syntaxhighlighter table td,
+.syntaxhighlighter table tr,
+.syntaxhighlighter table tbody,
+.syntaxhighlighter table thead,
+.syntaxhighlighter table caption,
+.syntaxhighlighter textarea {
+    line-height: 1.3em !important;
+}
+
+.syntaxhighlighter .line.alt1 {
+    background-color: #2b303b !important;
+}
+
+.syntaxhighlighter .line.alt2 {
+    background-color: #2b303b !important;
+}
+
+.syntaxhighlighter .string,
+.syntaxhighlighter .string a {
+    color: #90be8c !important;
+}
+
+.syntaxhighlighter .color1,
+.syntaxhighlighter .color1 a {
+    color: #d08770 !important;
+}
+
+.syntaxhighlighter .plain,
+.syntaxhighlighter .plain a {
+    color: #c0c5ce !important;
+}
+
+.syntaxhighlighter .keyword {
+    color: #bf616a !important;
+}
+
+.syntaxhighlighter .gutter {
+    color: #757a84 !important;
+}
+
+.syntaxhighlighter .line.highlighted.alt1,
+.syntaxhighlighter .line.highlighted.alt2 {
+    background-color: #333E49 !important;
+}
+
+.syntaxhighlighter .gutter .line.highlighted {
+    background-color: #343d46 !important;
+    color: #757a84 !important;
+}
+
+.syntaxhighlighter .value {
+    color: #96b5b4 !important;
+}
+
+.syntaxhighlighter .color3,
+.syntaxhighlighter .color3 a {
+    color: #b48ead !important;
+}
+
+.syntaxhighlighter .js.keyword {
+    color: #b48ead !important;
+}
+
+.syntaxhighlighter .css.keyword {
+    color: #4cc5f5 !important;
+}
+.syntaxhighlighter .css.value {
+    color: #9f64cc !important;
+}
+.syntaxhighlighter .css.classes {
+    color: #79c456 !important;
+}
+
+.syntaxhighlighter .css.namespaced{
+    color: #cf5353 !important;
+}
+.syntaxhighlighter .css.actionMarker{
+    color: #cfc653 !important;
+}
+
+
