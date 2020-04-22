@@ -141,11 +141,9 @@ ol li ul li { padding-left: 20px;}
 
 
 /* ------------- Message Blocs ---------------------- */
-.banner-bloc i {font-size: 21px;}
-.banner-bloc p {padding: 0;}
-.banner-bloc a {color: #ffffff;font-weight: bold;}
-.banner-bloc ul {padding: 0 30px;}
-.banner-bloc{border-radius: 5px;color: #ffffff;font-style: italic;padding: 10px 20px; margin: 1em;}
+.banner-bloc-image i {font-size: 21px; padding-right:20px;}
+.banner-bloc-image{display:flex;justify-content: center;align-items: center;}
+.banner-bloc{border-radius: 5px;color: #ffffff;font-style: italic;padding: 10px 20px; margin: 1em;display:flex;}
 
 .InfoBloc {background-color: #3498db; border: 1px solid #2b82bd;}
 .WarningBloc {background-color: #f39c12; border: 1px solid #d98c11;}
